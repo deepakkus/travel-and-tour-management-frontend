@@ -3,6 +3,7 @@ import ad from './ad.png';
 import './Footer.css';
 import Google from './google.jpg';
 import Apple from './apple.jpg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -12,20 +13,20 @@ function Footer() {
                 <ul>
                     <li>Brand USA</li>
                     <li>Media Inquiries</li>
-                    <li>Contact US</li>
-                    <li>Terms of Use</li>
-                    <li>USA Travel Information</li>
+                    <li><Link to='/contact' style={{color: 'white', textDecoration: "none", width: '100%'}}>Contact US</Link></li>
+                    <li><Link to='/terms-of-use' style={{color: 'white', textDecoration: "none"}}>Terms of Use</Link></li>
+                    <li><Link to='/USA-travel-information' style={{color: 'white', textDecoration: "none"}}>USA Travel Information</Link></li>
                 </ul>
             </div>
             <div className='last_list'>
                 <ul>
                     <li>FAQs</li>
-                    <li>Privacy Policy</li>
+                    <li><Link to='/privacy-policy' style={{color: 'white', textDecoration: "none"}}>Privacy Policy</Link></li>
                     <li>Travel Trade</li>
                 </ul>
             </div>
         </div>
-        <div className='icons'>
+        <div className='Footer-icons'>
             <a><i className="fa-brands fa-tiktok"></i></a>
             <a><i className="fa-brands fa-facebook-f"></i></a>
             <a><i className="fa-brands fa-youtube"></i></a>

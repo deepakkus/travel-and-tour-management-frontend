@@ -1,0 +1,615 @@
+.privacy-policy{
+    width: 100%;
+    height: fit-content;
+    background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.privacy-policy h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+}
+.privacyandpolicy{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    position: relative;
+    top: 300px;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.form-left{
+    padding-right: 30px;
+    width: 33%;
+    height: 100%;
+    padding-top: 30px;
+    float: left;
+}
+.form-left h4{
+    color: skyblue;
+    font-size: 25px;
+    margin-left: 80px;
+}
+.form-left div{
+    height: fit-content;
+    width: 300px;
+    float: right;
+    background-color: #ece6e6;
+    margin-top: 10px;
+}
+.form-left ul{
+    list-style: none;
+    width: 100%;
+    height: fit-content;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.form-left ul li{
+    padding: 15px;
+    border-bottom: 2px solid orange;
+    width: 100%;
+    color: orangered;
+}
+.form-left div ul li i{
+    float: right;
+}
+.hiddenDiv li{
+    border: none;
+}
+.form-right{
+    width: 60%;
+    height: 100%;
+    padding: 30px 60px 30px 30px;
+    position: relative;
+    top: -60px;
+    background-color: #fff;
+}
+.form-right h1{
+    margin: 10px 0px 30px 0px;
+}
+.form-right p{
+    font-weight: 600;
+}
+.form-right span{
+    color: orangered;
+}
+@media(max-width: 1000px){
+    .privacy-policy{
+        height: 15200px;
+        overflow: hidden;
+    }
+    .privacyandpolicy{
+        display:grid;
+        justify-content: center;
+        height: 14850px;
+    }
+    .form-left{
+        width: 100%;
+        float: left;
+    }
+    .form-left div{
+        width: 600px;
+        float: none;
+        margin: auto;
+    }
+    .form-left ul li{
+        font-size: 25px;
+    }
+    .form-left h4{
+       font-size: 42px;
+       text-align: center;
+       margin-bottom: 20px;
+    }
+    .form-right{
+        width: 100%;
+        top: 0px;
+        height: fit-content;
+    }
+    .form-right h1{
+        font-size: 35px;
+    }
+    #firstP{
+        font-size: 30px;
+    }
+    .form-right p{
+        font-size: 30px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .form-checkbox input{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 46px;
+    }
+    .form-checkbox label{
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    .fieldInput{
+        height: 50px;
+    }
+    .fieldInput::placeholder{
+       font-size: 20px;
+    }
+    .checking{
+        height: 130px;
+    }
+    .checking label{
+        position: relative;
+        top: 12px;
+    }
+    #check{
+        width: 30px;
+        height: 30px;
+        top: 20px;
+    }
+    .checking label span{
+        font-size: 25px;
+        position: relative;
+        top: 15px;
+        left: 10px;
+    }
+    .checking img{
+        height: 30px;
+        width: 30px;
+        margin-left: 100px;
+        margin-right: 15px;
+    }
+    .recaptcha{
+        font-size: 20px;
+    }
+    .checking p{
+        font-size: 20px;
+        position: relative;
+        left: 100px;
+        top: 0px;
+    }
+    .form-right button{
+        font-size: 30px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 900px){
+    .privacy-policy{
+        height: 16600px;
+    }
+}
+@media(max-width: 800px){
+    .privacy-policy{
+        height: 17600px;
+    }
+    .privacyandpolicy{
+        height: 17230px;
+    }
+}
+@media(max-width: 600px){
+    .privacy-policy{
+        height: 18200px;
+    }
+    .privacyandpolicy{
+        display:grid;
+        justify-content: center;
+        height: 16600px;
+    }
+    .form-left{
+        width: 100%;
+        float: left;
+        padding-right: 0px;
+    }
+    .form-left div{
+        width: 500px;
+        float: none;
+        margin: auto;
+    }
+    .form-left ul li{
+        font-size: 25px;
+    }
+    .form-left h4{
+       font-size: 42px;
+       text-align: center;
+       margin-bottom: 20px;
+    }
+    .form-right{
+        width: 100%;
+        top: 0px;
+        height: fit-content;
+    }
+    .form-right h1{
+        font-size: 30px;
+    }
+    #firstP{
+        font-size: 25px;
+    }
+    .form-right p{
+        font-size: 25px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .form-checkbox input{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 38px;
+    }
+    .form-checkbox label{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .fieldInput{
+        height: 50px;
+    }
+    .fieldInput::placeholder{
+       font-size: 20px;
+    }
+    .checking{
+        height: 100px;
+    }
+    .checking label{
+        position: relative;
+        top: 12px;
+        font-size: 18px;
+    }
+    #check{
+        width: 25px;
+        height: 25px;
+        top: 20px;
+    }
+    .checking label span{
+        font-size: 23px;
+        position: relative;
+        top: 15px;
+        left: 10px;
+    }
+    .checking img{
+        height: 30px;
+        width: 30px;
+        margin-left: 80px;
+        margin-right: 15px;
+    }
+    .recaptcha{
+        font-size: 15px;
+    }
+    .checking p{
+        font-size: 15px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .form-right button{
+        font-size: 25px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 500px){
+    .privacy-policy{
+        height: 18050px;
+    }
+    .privacyandpolicy{
+        height: 22300px;
+    }
+    .form-left div{
+        width: 320px;
+    }
+    .form-left ul li{
+        font-size: 20px;
+    }
+    .form-left h4{
+       font-size: 30px;
+       margin-left: 0px;
+    }
+    .form-right{
+        width: 100%;
+        top: 0px;
+        height: fit-content;
+    }
+    .form-right h1{
+        font-size: 30px;
+    }
+    #firstP{
+        font-size: 30px;
+    }
+    .form-right p{
+        font-size: 30px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .form-checkbox input{
+        height: 20px;
+        width: 20px;
+        top: 25px;
+    }
+    .form-checkbox label{
+        font-size: 20px;
+    }
+    .checking{
+        height: 100px;
+    }
+    .checking label{
+        position: relative;
+        top: 12px;
+    }
+    #check{
+        width: 20px;
+        height: 20px;
+        top: 0px;
+    }
+    .checking label span{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 10px;
+    }
+    .checking img{
+        height: 35px;
+        width: 35px;
+        margin-left: 30px;
+    }
+    .recaptcha{
+        font-size: 15px;
+        transform: translate(0px,0px);
+    }
+    .checking p{
+        font-size: 15px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .form-right button{
+        font-size: 25px;
+        padding: 10px 50px;
+    }
+}
+@media(max-width: 400px){
+    .privacy-policy{
+        height: 11800px;
+    }
+    .privacyandpolicy{
+        height: 11600px;
+    }
+    .form-left{
+        padding-right: 0px;
+    }
+    .form-left div{
+        width: 320px;
+    }
+    .form-left ul li{
+        font-size: 20px;
+    }
+    .form-left h4{
+       font-size: 30px;
+       margin-left: 0px;
+    }
+    .form-right{
+        width: 100%;
+    }
+    .form-right h1{
+        font-size: 25px;
+    }
+    #firstP{
+        font-size: 20px;
+    }
+    .form-right p{
+        font-size: 20px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .checking{
+        height: 100px;
+    }
+    #check{
+        width: 30px;
+        height: 30px;
+    }
+    .checking label span{
+        font-size: 20px;
+        top: -5px;
+        left: 10px;
+    }
+    .checking img{
+        height: 35px;
+        width: 35px;
+        margin-left: 30px;
+    }
+    .recaptcha{
+        font-size: 15px;
+    }
+    .checking p{
+        font-size: 15px;
+    }
+    .form-right button{
+        font-size: 25px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 380px){
+    .privacy-policy{
+        height: 12240px;
+        background-size: cover;
+    }
+    .form-left div{
+        width: 300px;
+    }
+    .form-left ul li{
+        font-size: 20px;
+    }
+    .form-left h4{
+       font-size: 30px;
+    }
+    .form-right{
+        width: 100%;
+    }
+    .form-right h1{
+        font-size: 25px;
+    }
+    #firstP{
+        font-size: 20px;
+    }
+    .form-right p{
+        font-size: 20px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .form-checkbox input{
+       height: 25px;
+       width: 25px;
+       top: 28px;
+    }
+    .form-checkbox label{
+        font-size: 18px;
+    }
+    .fieldInput{
+        height: 50px;
+    }
+    .fieldInput::placeholder{
+        font-size: 20px;
+    }
+    .checking{
+        height: 100px;
+    }
+    #check{
+        width: 30px;
+        height: 30px;
+    }
+    .checking label span{
+        font-size: 18px;
+    }
+    .checking img{
+        height: 30px;
+        width: 30px;
+    }
+    .recaptcha{
+        font-size: 15px;
+    }
+    .checking p{
+        font-size: 15px;
+    }
+    .form-right button{
+        font-size: 20px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 370px){
+    .privacy-policy{
+        height: 11600px;
+    }
+    .privacyandpolicy{
+        height: 11235px;
+    }
+    .form-left div{
+        width: 300px;
+    }
+    .form-left ul li{
+        font-size: 18px;
+    }
+    .form-left h4{
+       font-size: 30px;
+    }
+    .form-right{
+        width: 100%;
+    }
+    .form-right h1{
+        font-size: 23px;
+    }
+    #firstP{
+        font-size: 18px;
+    }
+    .form-right p{
+        font-size: 18px;
+    }
+    .form-checkbox{
+        padding-right: 0px;
+        display: grid;
+        margin-bottom: 50px;
+    }
+    .form-checkbox input{
+       height: 25px;
+       width: 25px;
+       top: 28px;
+    }
+    .form-checkbox label{
+        font-size: 17px;
+    }
+    .fieldInput{
+        height: 40px;
+    }
+    .fieldInput::placeholder{
+        font-size: 15px;
+    }
+    .checking{
+        height: 80px;
+    }
+    #check{
+        width: 25px;
+        height: 25px;
+    }
+    .checking label span{
+        font-size: 16px;
+    }
+    .checking img{
+        height: 25px;
+        width: 25px;
+    }
+    .recaptcha{
+        font-size: 12px;
+    }
+    .checking p{
+        font-size: 12px;
+        transform: translate(0px,-10px);
+    }
+    .form-right button{
+        font-size: 20px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 300px){
+    .privacy-policy{
+        height: 9980px;
+    }
+    .privacy-policy h2{
+        font-size: 30px;
+    }
+    .form-left div{
+        width: 230px;
+        margin: 0px auto;
+    }
+    .form-left ul li{
+        font-size: 18px;
+    }
+    .form-left h4{
+       font-size: 30px;
+       width: 270px;
+    }
+    .form-right{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .form-right h1{
+        font-size: 23px;
+        width: 90%;
+    }
+    
+}

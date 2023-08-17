@@ -1,7 +1,7 @@
 .footer_container{
-    position: relative;
-    top: 50rem;
     width: 100%;
+    position: relative;
+    top: 20rem;
     height: 400px;
     background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/03/dark-sunset-4k_1551644079.jpg');
     opacity: .9;
@@ -16,25 +16,30 @@
 }
 .list_item ul{
     list-style-type: none;
-
+   
 }
 .list_item ul li{
     font-size: 18px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 10px;
+    text-decoration: none;
 }
-.icons{
+.Footer-icons{
     width: fit-content;
     position: relative;
     left: 4.5%;
     top: 5rem;
 }
-.icons a{
+.Footer-icons a{
     margin-left: 20px;
     color: #fff;
     font-size: 28px;
 }
+.Footer-icons i{
+    color: white;
+}
+
 .pic_para{
     width: 45%;
     height: 250px;
@@ -203,7 +208,7 @@
 } */
 @media(max-width: 1000px){
     .footer_container{
-        top: 185rem;
+        top: 0px;
         height: 500px;
     }
     .list_item{
@@ -246,7 +251,7 @@
 }
 @media(max-width: 900px){
     .footer_container{
-        top: 180rem;
+        top: 0rem;
     }
     .list_item{
         top: 1rem;
@@ -289,7 +294,7 @@
 }
 @media(max-width: 800px){
     .footer_container{
-        top: 160rem;
+        top: 00rem;
         height: 410px;
     }
     .list_item{
@@ -332,7 +337,7 @@
 }
 @media(max-width: 600px){
     .footer_container{
-        top: 80rem;
+        top: 0rem;
         height: 360px;
     }
     .list_item{
@@ -375,7 +380,7 @@
 }
 @media(max-width: 500px){
     .footer_container{
-        top: 106rem;
+        top: 0rem;
     }
     .list_item{
         top: 1rem;
@@ -417,7 +422,7 @@
 }
 @media(max-width: 400px){
     .footer_container{
-        top: 52rem;
+        top: 0rem;
     }
     .list_item{
         top: 1rem;
@@ -459,7 +464,7 @@
 }
 @media(max-width: 380px){
     .footer_container{
-        top: 45rem;
+        top: 0rem;
         height: 350px;
     }
     .list_item{
@@ -503,7 +508,7 @@
 }
 @media(max-width: 370px){
     .footer_container{
-        top: 38rem;
+        top: 0rem;
     }
     .list_item{
         top: 1rem;
@@ -545,7 +550,7 @@
 }
 @media(max-width: 300px){
     .footer_container{
-        top: 26rem;
+        top: 0rem;
         height: 320px;
     }
     .list_item{
@@ -585,5 +590,11 @@
     .last_div p{
         font-size: 11px;
         width: fit-content;
+    }
+    .Footer-icons{
+        top: 0rem;
+    }
+    .Footer-icons a{
+        font-size: 18px;
     }
 }

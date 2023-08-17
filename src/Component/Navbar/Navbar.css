@@ -43,8 +43,8 @@
 
 .last_nav {
     position: relative;
-    left: 0%;
-    width: 20%;
+    right: 2%;
+    width: fit-content;
     top: 10px;
 }
 
@@ -52,6 +52,7 @@
     height: 70%;
     display: flex;
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .last_nav ul form input {
@@ -80,21 +81,16 @@
     width: 15%;
 }
 
-.last_nav ul li:nth-child(3) i {
-    transform: translate(6px, 0px);
+.lastLi{
+    transform: translate(3px, 0px);
 }
 
 .last_nav ul li:last-child {
     width: 30px
 }
 
-.lastLi:last-child {
-    width: 30px;
-}
 
-.last_nav a {
-    color: red;
-}
+
 
 .down_nav {
     width: 28.4%;
@@ -106,17 +102,17 @@
 }
 
 .down_nav ul {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-top: 10px;
     display: flex;
     margin-right: 20px;
     position: relative;
-    left: 10%;
     text-decoration: none;
     list-style-type: none;
     float: left;
     padding: 0px;
+    justify-content: end;
 }
 
 .down_nav ul li {
@@ -321,6 +317,7 @@
 .bar_content li {
     font-size: 20px;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .bar_content ul li i {
@@ -615,7 +612,7 @@
 
     .last_nav {
         position: relative;
-        left: -5%;
+        left: 0%;
         top: 10px;
     }
 
@@ -639,12 +636,9 @@
         padding: 0px;
     }
 
-    .last_nav ul li:last-child {
-        width: 25px;
-    }
 
     .lastLi {
-        padding-right: 15px;
+        transform: translate(5px,0px);
     }
 
     .lastLi i {
@@ -659,33 +653,15 @@
     }
 
     .down_nav {
-        left: 40%;
-        width: 60%;
+        left: 60%;
+        width: fit-content;
         float: right;
         top: -48px;
-    }
 
-    .down_nav ul li {
-        font-size: 25px;
-        margin-left: 80px;
     }
-
-    .down_nav ul li:last-child {
-        margin-left: 50px;
-    }
-
     .down_nav ul li i {
         font-size: 25px;
     }
-
-    .down_nav ul li:first-child {
-        margin-left: 0px;
-    }
-
-    .down_nav div {
-        top: 50px;
-    }
-
     .down_nav div ul {
         width: 80%;
     }
@@ -904,7 +880,6 @@
     }
 
     .last_nav {
-        position: relative;
         left: 0%;
     }
 
@@ -914,17 +889,15 @@
     }
 
     .last_nav ul li {
-        margin-left: 5px;
         width: 30px;
         font-size: 23px;
         margin-right: 10px;
     }
-
-    .lastLi i {
-        margin-right: 5px;
-        align-items: center;
-        padding-left: 2px;
-        transform: translate(-2px, 1px);
+    .last_nav ul li:last-child{
+        width: 30px;
+    }
+    .lastLi {
+        transform: translate(5px, 1px);
     }
 
     .down_nav {
@@ -997,7 +970,7 @@
 
     .last_nav {
         position: relative;
-        left: 3%;
+        left:  0%;
         margin-top: 5px;
     }
 
@@ -1014,9 +987,9 @@
     }
 
     .down_nav {
-        left: 18%;
+        left: 28%;
         top: -20px;
-        width: 80%;
+        width: 70%;
         float: right;
     }
 
@@ -1435,18 +1408,8 @@
         margin: 0px;
     }
 
-    .last_nav ul li a {
-        height: 20px;
-        width: 20px;
-        margin-right: 5px;
-    }
-
     .last_nav ul li i {
         font-size: 15px;
-    }
-
-    .last_nav ul li a i {
-        padding: 12px;
     }
 
     .down_nav {

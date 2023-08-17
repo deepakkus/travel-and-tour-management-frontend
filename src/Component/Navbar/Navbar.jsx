@@ -12,6 +12,7 @@ import America4 from './America4.jpg';
 import America5 from './America5.jpg';
 import America6 from './America6.jpg';
 import America7 from './America7.jpg';
+import { Link } from 'react-router-dom';
 
 function Navbar(props) {
     const [isActive, setIsActive] = useState(false);
@@ -26,12 +27,12 @@ function Navbar(props) {
     const [isIcon, setIcon] = useState(icon);
 
     const showinhHandler = (props) => {
-        setShowing(true);
-        setIcon(true)
+        setShowing(!isShowing);
+        setIcon(!isIcon)
     }
     const hidingHandler = (props) => {
-        setShowing(false);
-        setIcon(false)
+        setShowing();
+        setIcon(!isIcon)
     }
 
     const [isShow, setShow] = useState(view);
@@ -91,10 +92,10 @@ function Navbar(props) {
                     </div>
                     <div className='last_nav'>
                         <ul>
-                            <li><a href='#' onClick={handleClick} ><i className="fa fa-search" aria-hidden="true"></i></a></li>
-                            <li><a href='#'><i className="fa-regular fa-heart"></i></a></li>
-                            <li style={{ backgroundColor: "red", display: isIcon ? 'none' : 'grid' }} onClick={showinhHandler}><a className='lastLi' href='#'><i className='fa-solid fa-bars' style={{ color: "white" }} ></i></a></li>
-                            <li style={{ backgroundColor: "red", display: isIcon ? 'grid' : 'none' }} onClick={hidingHandler}><a className='lastLi' href='#'><i className="fa-solid fa-xmark" style={{ color: "white", padding: "5px" }}></i></a></li>
+                            <li onClick={handleClick} style={{color: 'red'}}><i className="fa fa-search" aria-hidden="true"></i></li>
+                            <li style={{color: 'red'}}><i className="fa-regular fa-heart"></i></li>
+                            <li style={{ backgroundColor: "red" }} onClick={showinhHandler}><i className={isIcon? 'fa-solid fa-xmark lastLi':'fa-solid fa-bars lastLi'} style={{ color: "white"}} ></i></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -121,6 +122,7 @@ function Navbar(props) {
                                 switch (items) {
                                     case "Pacific": return (
                                         <div key={id}>
+                                        <img src={America1} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -129,6 +131,7 @@ function Navbar(props) {
                                     )
                                     case "West": return (
                                         <div key={id}>
+                                        <img src={America7} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -137,6 +140,7 @@ function Navbar(props) {
                                     )
                                     case "Southwest": return (
                                         <div key={id}>
+                                        <img src={America3} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -145,6 +149,7 @@ function Navbar(props) {
                                     )
                                     case "Midwest": return (
                                         <div key={id}>
+                                        <img src={America2} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -153,6 +158,7 @@ function Navbar(props) {
                                     )
                                     case "Southeast": return (
                                         <div key={id}>
+                                        <img src={America6} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -161,6 +167,7 @@ function Navbar(props) {
                                     )
                                     case "Northeast": return (
                                         <div key={id}>
+                                        <img src={America5} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -169,6 +176,7 @@ function Navbar(props) {
                                     )
                                     case "USA Territories": return (
                                         <div key={id}>
+                                        <img src={America4} style={{marginBottom: '10px'}}></img>
                                             <p style={{ color: '#90b3cf' }}>{items}</p>
                                             {isRecord.data?.map((item, index) =>
                                                 <p key={index}>{item.region == items ? item.name : null}</p>
@@ -230,13 +238,13 @@ function Navbar(props) {
                         <ul>
                             <li><img src={India}></img>English (India)<i className="fa-solid fa-caret-down"></i></li>
                             <div></div>
-                            <li>Brand USA</li>
-                            <li>Media Inquiries</li>
-                            <li>Contact US</li>
-                            <li>Terms of Use</li>
-                            <li>USA Travel Information</li>
-                            <li>FAQs</li>
-                            <li>Privacy Policy</li>
+                            <li  onClick={showinhHandler}>Brand USA</li>
+                            <li onClick={showinhHandler}>Media Inquiries</li>
+                            <li onClick={showinhHandler}><Link to='/contact' style={{color: 'black', textDecoration: 'none', width: '100%', display: 'block'}}>Contact US</Link></li>
+                            <li onClick={showinhHandler}><Link to='/terms-of-use' style={{color: 'black', textDecoration: 'none', width: '100%', display: 'block'}}>Terms of Use</Link></li>
+                            <li onClick={showinhHandler}><Link to='/USA-travel-information' style={{color: 'black', textDecoration: 'none',width: '100%', display: 'block'}}>USA Travel Information</Link></li>
+                            <li onClick={showinhHandler}>FAQs</li>
+                            <li onClick={showinhHandler}><Link to='/privacy-policy' style={{color: 'black', textDecoration: 'none', width: '100%', display: 'block'}}>Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </div>

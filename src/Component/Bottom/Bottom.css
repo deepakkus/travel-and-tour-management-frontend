@@ -4,6 +4,7 @@
     height: fit-content;
     position: relative;
     top: 320px;
+    margin-bottom: 60px;
 }
 .bottom_Content h1{
     color: orange;
@@ -190,7 +191,7 @@
 
 .down_area{
     width: 100%;
-    height: 40rem;
+    height: 30rem;
     margin: auto;
     position: relative;
     top: 20px;
@@ -256,7 +257,7 @@
     display: flex;
     margin-left: 100px;  
     position: relative;
-    top: 100px;
+    top: 10px;
 
 }
 .last_span p{
@@ -552,6 +553,8 @@
 @media(max-width: 1000px){
     .bottom_Content{
         top: 650px;
+        height: 2800px;
+        margin-bottom: 0px;
     }
     .para{
         left: 400px;
